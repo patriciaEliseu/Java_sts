@@ -32,7 +32,10 @@ public class Divisao {
 				System.err.println("Não existe divisão por zero! " + e);
 				ler.nextLine();
 
+			}finally {
+				System.out.println("Obrigada pela preferência! ");
 			}
+			
 		} while (loop);
 
 	}
