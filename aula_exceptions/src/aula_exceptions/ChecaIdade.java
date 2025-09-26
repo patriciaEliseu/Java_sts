@@ -14,18 +14,18 @@ public class ChecaIdade {
 			idade = leia.nextInt();
 
 			validarIdade(idade);
-		} catch (ArithmeticException e) {
+		} catch (ExcecaoSimples e) {
 			System.out.println("A pessoa não está apta a dirigir!");
 		}
 
 	}
 
-	public static void validarIdade(int idade) {
+	public static void validarIdade(int idade) throws ExcecaoSimples {
 
 		if (idade > 18)
 			System.out.println("A Pessoa pode dirigir!!");
 		else
-			throw new ArithmeticException("A Pessoa não pode dirigir");
+			throw new ExcecaoSimples("A Pessoa não pode dirigir");
 
 	}
 
