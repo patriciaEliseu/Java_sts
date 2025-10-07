@@ -17,6 +17,7 @@ public class Exemplo01A {
 				System.out.printf("%nDigite a %d palavra: ", i+1);
 				palavras [i] = leia.next();		
 			}
+			leia.close();
 			
 			for (var palavra : palavras) {
 				System.out.println(palavra);
@@ -32,6 +33,7 @@ public class Exemplo01A {
 			} else {
 				System.out.println("O valor é nulo!");		}
 		}
+		
 	}
-	 
+	
 }
